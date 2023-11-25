@@ -20,6 +20,9 @@ module.exports = {
         'gray-inactive': '#A9ACAC',
       },
     },
+    variants: {
+      fill: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

@@ -1,7 +1,9 @@
+"use client"
 import { svgData } from "@/assets/svg";
 import React from "react";
 
 const KnowMore = () => {
+
   return (
     <section className="bg-[white] p-[3rem]">
       
@@ -16,10 +18,10 @@ const KnowMore = () => {
         {svgData.map((svg, i) => (
           <div
             key={i}
-            className="flex flex-col items-center p-[2.5rem] gap-[0.5rem]"
+            className="flex flex-col items-center p-[2.5rem] gap-[0.5rem] text-gray-inactive hover:bg-[#F6EDFF] hover:text-blue-active"
           >
             <div dangerouslySetInnerHTML={{ __html: svg.image }} />
-            <div className="text-blue-active font-Cabin">{svg.title}</div>
+            <span className="font-[Cabin]">{svg.title}</span>
           </div>
         ))}
       </div>
